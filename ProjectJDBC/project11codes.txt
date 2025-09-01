@@ -1,0 +1,8 @@
+project main==================>>>>>>
+
+mysql> create table category( cid int primary key auto_increment,cname varchar(50));
+Query OK, 0 rows affected (0.22 sec)
+
+mysql> create table Product( pid int primary key auto_increment,pname varchar(50),price double,quantity int,cid int,foreign key(cid) references category(cid));
+Query OK, 0 rows affected (0.09 sec)
+
